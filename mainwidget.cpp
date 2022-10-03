@@ -24,6 +24,8 @@ MainWidget::MainWidget(QWidget *parent) :
 ui->setupUi(this);
 initUI();
 
+printf(" This is  the GUI for command line QUCS \n");
+
 initSlot();
 updateData();
 }
