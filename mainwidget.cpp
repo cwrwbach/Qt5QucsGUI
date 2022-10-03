@@ -72,8 +72,8 @@ QPen pen = series_1->pen();
 pen.setColor("red");
 series_1->setPen(pen);
 
-chartView->chart()->setPlotAreaBackgroundBrush(QColor(0,64,0));
-chartView->chart()->setPlotAreaBackgroundVisible(true);
+//chartView->chart()->setPlotAreaBackgroundBrush(QColor(0,64,0));
+//chartView->chart()->setPlotAreaBackgroundVisible(true);
 
 chartView->chart()->addAxis(axisX, Qt::AlignBottom);
 chartView->chart()->addAxis(axisY, Qt::AlignLeft);
@@ -254,7 +254,7 @@ void MainWidget::buttonSlot()
 }
 
 void MainWidget::tipSlot(QPointF position, bool isHovering)
-{
+{printf(" hovrhover hover \n");
     if (tip == 0)
         tip = new Callout(chart);
 
